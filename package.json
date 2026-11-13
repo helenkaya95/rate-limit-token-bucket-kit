@@ -1,0 +1,17 @@
+{
+  "name": "rate-limit-token-bucket-kit",
+  "version": "0.1.0",
+  "description": "A token bucket rate limiter that reports if a request can proceed and how long to wait.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
