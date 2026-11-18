@@ -46,3 +46,10 @@ Throws `TokenBucketError` if any argument is invalid.
 `bucket.capacity` — the configured capacity.
 
 `bucket.refillIntervalMs` — the configured interval.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
